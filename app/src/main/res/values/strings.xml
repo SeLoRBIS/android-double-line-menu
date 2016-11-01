@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">android-double-line-menu</string>
+
+    <!-- NAVIGATION -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="nav_title_1">Bloc 1</string>
+    <string name="nav_1">Item Title 1</string>
+    <string name="nav_st_1">Item Subtitle 1</string>
+    <string name="nav_2">Item Title 2</string>
+    <string name="nav_st_2">Item Subtitle 2</string>
+
+    <string name="nav_title_2">Bloc 2</string>
+    <string name="nav_3">Item Title 3</string>
+    <string name="nav_st_3">Item Subtitle 3</string>
+    <string name="nav_4">Item Title 4</string>
+    <string name="nav_st_4">Item Subtitle 4</string>
+
+    activity_home_title
+    <string name="activity_home_title">Home</string>
+    <string name="fragment_title">Fragment Title</string>
+    <string name="activity_title">Activity Title</string>
+</resources>
