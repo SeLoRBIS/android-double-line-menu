@@ -5,6 +5,10 @@ public class NavItem {
     private String mSubtitle;
     private int mIcon;
 
+    public NavItem(String title) {
+        mTitle = title;
+    }
+
     public NavItem(String title, String subtitle, int icon) {
         mTitle = title;
         mSubtitle = subtitle;

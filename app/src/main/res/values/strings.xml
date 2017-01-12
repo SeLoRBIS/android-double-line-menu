@@ -17,8 +17,11 @@
     <string name="nav_4">Item Title 4</string>
     <string name="nav_st_4">Item Subtitle 4</string>
 
-    activity_home_title
     <string name="activity_home_title">Home</string>
     <string name="fragment_title">Fragment Title</string>
     <string name="activity_title">Activity Title</string>
+
+    <string name="line1">Line 1</string>
+    <string name="line2">Line 2</string>
+
 </resources>

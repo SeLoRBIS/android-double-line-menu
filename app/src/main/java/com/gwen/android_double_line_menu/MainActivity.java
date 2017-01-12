@@ -63,11 +63,11 @@ public class MainActivity extends AppCompatActivity {
 
         adapter.addItem(new NavItem("Home", "Back home", R.drawable.ic_home));
 
-        adapter.addSectionHeaderItem(new NavItem(getResources().getString(R.string.nav_title_1), "", 0));
+        adapter.addSectionHeaderItem(new NavItem(getResources().getString(R.string.nav_title_1)));
         adapter.addItem(new NavItem(getResources().getString(R.string.nav_1), getResources().getString(R.string.nav_st_1), R.drawable.ic_1));
         adapter.addItem(new NavItem(getResources().getString(R.string.nav_2), getResources().getString(R.string.nav_st_2), R.drawable.ic_2));
 
-        adapter.addSectionHeaderItem(new NavItem(getResources().getString(R.string.nav_title_2), "", 0));
+        adapter.addSectionHeaderItem(new NavItem(getResources().getString(R.string.nav_title_2)));
         adapter.addItem(new NavItem(getResources().getString(R.string.nav_3), getResources().getString(R.string.nav_st_3), R.drawable.ic_3));
         adapter.addItem(new NavItem(getResources().getString(R.string.nav_4), getResources().getString(R.string.nav_st_4), R.drawable.ic_4));
 

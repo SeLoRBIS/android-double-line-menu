@@ -16,29 +16,25 @@ public class DrawerListAdapter extends BaseAdapter {
     private static final int TYPE_ITEM = 0;
     private static final int TYPE_SEPARATOR = 1;
 
-    Context mContext;
-
-    ArrayList<NavItem> mNavItems = new ArrayList();
-    ArrayList<NavTitle> mNavTitles = new ArrayList();
+    ArrayList<NavItem> mNavData = new ArrayList<>();
 
     private TreeSet<Integer> sectionHeader = new TreeSet<Integer>();
 
     private LayoutInflater mInflater;
 
     public DrawerListAdapter(Context context) {
-        mContext = context;
         mInflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     public void addItem(final NavItem item) {
-        mNavItems.add(item);
+        mNavData.add(item);
         notifyDataSetChanged();
     }
 
     public void addSectionHeaderItem(final NavItem item) {
-        mNavItems.add(item);
-        sectionHeader.add(mNavItems.size() - 1);
+        mNavData.add(item);
+        sectionHeader.add(mNavData.size()-1);
         notifyDataSetChanged();
     }
 
@@ -54,12 +50,12 @@ public class DrawerListAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return mNavItems.size();
+        return mNavData.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return mNavItems.get(position);
+        return mNavData.get(position);
     }
 
     @Override
@@ -75,19 +71,19 @@ public class DrawerListAdapter extends BaseAdapter {
         if (convertView == null) {
             switch (rowType) {
                 case TYPE_ITEM:
-                    convertView = mInflater.inflate(R.layout.drawer_item, null);
+                    convertView = mInflater.inflate(R.layout.drawer_item, parent, false);
                     TextView titleView = (TextView) convertView.findViewById(R.id.title);
                     TextView subtitleView = (TextView) convertView.findViewById(R.id.subTitle);
                     ImageView iconView = (ImageView) convertView.findViewById(R.id.icon);
 
-                    titleView.setText( mNavItems.get(position).getmTitle());
-                    subtitleView.setText( mNavItems.get(position).getmSubtitle() );
-                    iconView.setImageResource(mNavItems.get(position).getmIcon());
+                    titleView.setText( mNavData.get(position).getmTitle());
+                    subtitleView.setText( mNavData.get(position).getmSubtitle() );
+                    iconView.setImageResource(mNavData.get(position).getmIcon());
                     break;
                 case TYPE_SEPARATOR:
-                    convertView = mInflater.inflate(R.layout.drawer_item_title, null);
+                    convertView = mInflater.inflate(R.layout.drawer_item_title, parent, false);
                     TextView title = (TextView) convertView.findViewById(R.id.title);
-                    title.setText(mNavItems.get(position).getmTitle());
+                    title.setText(mNavData.get(position).getmTitle());
                     break;
             }
         }
