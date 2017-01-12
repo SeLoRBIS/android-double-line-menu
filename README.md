@@ -1,5 +1,3 @@
-![alt text](https://raw.githubusercontent.com/SeLoRBIS/android-double-line-menu/master/art/icon.png)
-
 Double Line Menu Example
 ===================================
 
@@ -12,3 +10,8 @@ Pre-requisites
 - Android Build Tools v24.0.3
 - Android Support Repository r13 (for v25.0.0)
 
+Screenshot
+--------------
+<p>
+  <img src="https://raw.githubusercontent.com/selorbis/android-double-line-menu/master/art/screenshot.png" width="350"/>
+</p>
